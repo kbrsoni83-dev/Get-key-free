@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width,initial-scale=1.0">
+
+<title>YANZ KEY GENERATOR</title>
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color:white;
+
+    background:
+
+        linear-gradient(
+            rgba(120,40,180,.08) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(120,40,180,.08) 1px,
+            transparent 1px
+        ),
+
+        radial-gradient(
+            circle at 50% 20%,
+            #35104d 0%,
+            #100817 40%,
+            #050509 100%
+        );
+
+    background-size:
+        34px 34px,
+        34px 34px,
+        100% 100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px 15px;
+
+    overflow-x:hidden;
+
+}
+
+
+body:before,
+body:after{
+
+    content:"";
+
+    position:fixed;
+
+    width:300px;
+
+    height:300px;
+
+    filter:blur(100px);
+
+    pointer-events:none;
+
+}
+
+
+body:before{
+
+    background:#9c27ff;
+
+    opacity:.12;
+
+    top:10%;
+
+    left:-100px;
+
+}
+
+
+body:after{
+
+    background:#d500ff;
+
+    opacity:.12;
+
+    right:-100px;
+
+    bottom:5%;
+
+}
+
+
+.container{
+
+    width:100%;
+
+    max-width:610px;
+
+    padding:45px 38px;
+
+    border-radius:38px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18,14,26,.97),
+            rgba(10,7,16,.98)
+        );
+
+    border:
+        1px solid
+        rgba(194,45,255,.35);
+
+    box-shadow:
+
+        0 0 50px
+        rgba(156,39,255,.15),
+
+        inset 0 0 30px
+        rgba(255,255,255,.015);
+
+    position:relative;
+
+    z-index:2;
+
+    animation:
+        containerIn .8s ease;
+
+}
+
+
+@keyframes containerIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px)
+            scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+    text-align:center;
+
+    font-size:70px;
+
+    font-weight:800;
+
+    letter-spacing:8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a82cff,
+            #e45cff,
+            #9d25ff
+        );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.subtitle{
+
+    text-align:center;
+
+    margin-top:3px;
+
+    font-size:14px;
+
+    letter-spacing:7px;
+
+    color:#77727f;
+
+}
+
+
+/* =========================
+   ONLINE
+========================= */
+
+.online{
+
+    width:fit-content;
+
+    margin:
+        38px auto 32px;
+
+    padding:
+        12px 27px;
+
+    border-radius:30px;
+
+    border:
+        1px solid
+        rgba(91,255,185,.22);
+
+    background:
+        rgba(50,80,70,.12);
+
+    color:#65dca9;
+
+    font-size:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+.dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#55e9a5;
+
+    box-shadow:
+        0 0 10px #55e9a5;
+
+    animation:
+        pulse 1.5s infinite;
+
+}
+
+
+@keyframes pulse{
+
+    0%,100%{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:.45;
+
+        transform:scale(.7);
+
+    }
+
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.info{
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    margin-bottom:20px;
+
+}
+
+
+.info-title{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+.info-text{
+
+    color:#85818c;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+
+.purple{
+
+    color:#d144ff;
+
+    font-weight:700;
+
+}
+
+
+/* =========================
+   TASK
+========================= */
+
+.task{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:20px;
+
+    margin-top:16px;
+
+    border-radius:25px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    transition:.3s;
+
+}
+
+
+.task:hover{
+
+    border-color:
+        rgba(190,45,255,.35);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.icon{
+
+    min-width:70px;
+
+    height:70px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2c103c,
+            #170b20
+        );
+
+}
+
+
+.task-content{
+
+    flex:1;
+
+}
+
+
+.task-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+
+.task-desc{
+
+    margin-top:6px;
+
+    font-size:14px;
+
+    color:#77727f;
+
+}
+
+
+.task-btn{
+
+    border:
+        1px solid
+        rgba(100,220,180,.25);
+
+    background:
+        rgba(70,120,100,.12);
+
+    color:#69dfad;
+
+    padding:
+        13px 20px;
+
+    border-radius:15px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+.task-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+.task-btn:active{
+
+    transform:scale(.95);
+
+}
+
+
+.task-btn.done{
+
+    background:
+        rgba(70,200,150,.12);
+
+    border-color:
+        rgba(100,230,180,.35);
+
+    color:#65e3ae;
+
+}
+
+
+/* =========================
+   GET KEY
+========================= */
+
+.get-key{
+
+    width:100%;
+
+    margin-top:30px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:22px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#6d6674;
+
+    background:
+        linear-gradient(
+            100deg,
+            #351044,
+            #5c146c
+        );
+
+    cursor:not-allowed;
+
+    transition:.3s;
+
+}
+
+
+.get-key.active{
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            100deg,
+            #6d1590,
+            #a927c9
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(170,35,220,.22);
+
+}
+
+
+.get-key.active:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(170,35,220,.35);
+
+}
+
+
+.get-key:disabled{
+
+    opacity:1;
+
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result{
+
+    display:none;
+
+    margin-top:22px;
+
+    animation:
+        resultIn .5s ease;
+
+}
+
+
+@keyframes resultIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+.key-box{
+
+    padding:25px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(111,30,140,.16),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid
+        rgba(200,50,255,.28);
+
+    text-align:center;
+
+}
+
+
+.label{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    color:#817b87;
+
+    margin-bottom:15px;
+
+}
+
+
+.key{
+
+    padding:18px 10px;
+
+    border-radius:15px;
+
+    background:#08060d;
+
+    border:
+        1px solid
+        rgba(210,50,255,.25);
+
+    color:#d65cff;
+
+    font-size:19px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    word-break:break-all;
+
+}
+
+
+.copy{
+
+    margin-top:15px;
+
+    padding:
+        13px 25px;
+
+    border-radius:13px;
+
+    border:
+        1px solid
+        rgba(210,50,255,.25);
+
+    background:
+        rgba(170,40,220,.12);
+
+    color:#d75aff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+.copy:hover{
+
+    background:
+        rgba(170,40,220,.22);
+
+}
+
+
+.copy:active{
+
+    transform:scale(.95);
+
+}
+
+
+/* =========================
+   TIMER
+========================= */
+
+.timer{
+
+    margin-top:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+}
+
+
+.timer-label{
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    color:#77727f;
+
+    margin-bottom:8px;
+
+}
+
+
+.timer-value{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#b83cff;
+
+    letter-spacing:3px;
+
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+
+    text-align:center;
+
+    margin-top:22px;
+
+    color:#77727f;
+
+    font-size:14px;
+
+    min-height:20px;
+
+    line-height:1.5;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    text-align:center;
+
+    margin-top:38px;
+
+    color:#4d4852;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    body{
+
+        padding:
+            15px 10px;
+
+    }
+
+
+    .container{
+
+        padding:
+            35px 18px;
+
+        border-radius:30px;
+
+    }
+
+
+    .logo{
+
+        font-size:55px;
+
+    }
+
+
+    .subtitle{
+
+        font-size:11px;
+
+        letter-spacing:5px;
+
+    }
+
+
+    .task{
+
+        padding:16px;
+
+        gap:12px;
+
+    }
+
+
+    .icon{
+
+        min-width:58px;
+
+        height:58px;
+
+        font-size:25px;
+
+    }
+
+
+    .task-btn{
+
+        padding:
+            11px 13px;
+
+        font-size:11px;
+
+    }
+
+
+    .task-title{
+
+        font-size:16px;
+
+    }
+
+
+    .task-desc{
+
+        font-size:12px;
+
+    }
+
+
+    .key{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- =========================
+         LOGO
+    ========================== -->
+
+    <div class="logo">
+        YANZ
+    </div>
+
+
+    <div class="subtitle">
+        KEY GENERATOR
+    </div>
+
+
+    <div class="online">
+
+        <span class="dot"></span>
+
+        SYSTEM ONLINE
+
+    </div>
+
+
+
+    <!-- =========================
+         INFO
+    ========================== -->
+
+    <div class="info">
+
+        <div class="info-title">
+
+            🔐 Get YANZ MOD Access
+
+        </div>
+
+
+        <div class="info-text">
+
+            Ikuti kedua akun/saluran di bawah
+            untuk mendapatkan access key.
+
+            Key berlaku selama
+
+            <span class="purple">
+                2 JAM
+            </span>.
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         TIKTOK
+    ========================== -->
+
+    <div class="task">
+
+        <div class="icon">
+            ♪
+        </div>
+
+
+        <div class="task-content">
+
+            <div class="task-title">
+                TikTok
+            </div>
+
+            <div class="task-desc">
+                Follow @frimmawan
+            </div>
+
+        </div>
+
+
+        <button
+            class="task-btn"
+            id="tiktokBtn"
+            onclick="openTikTok()">
+
+            FOLLOW
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         WHATSAPP
+    ========================== -->
+
+    <div class="task">
+
+        <div class="icon">
+            ◉
+        </div>
+
+
+        <div class="task-content">
+
+            <div class="task-title">
+                WhatsApp Channel
+            </div>
+
+            <div class="task-desc">
+                Follow saluran YANZ
+            </div>
+
+        </div>
+
+
+        <button
+            class="task-btn"
+            id="waBtn"
+            onclick="openWhatsApp()">
+
+            FOLLOW
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         GET KEY
+    ========================== -->
+
+    <button
+        class="get-key"
+        id="getKeyBtn"
+        disabled>
+
+        🔒 FOLLOW DULU
+
+    </button>
+
+
+
+    <!-- =========================
+         RESULT
+    ========================== -->
+
+    <div
+        class="result"
+        id="result">
+
+
+        <div class="key-box">
+
+
+            <div class="label">
+                YOUR ACCESS KEY
+            </div>
+
+
+            <div
+                class="key"
+                id="keyText">
+
+                -
+
+            </div>
+
+
+            <button
+                class="copy"
+                id="copyBtn">
+
+                COPY KEY
+
+            </button>
+
+
+        </div>
+
+
+
+        <div class="timer">
+
+
+            <div class="timer-label">
+                KEY EXPIRES
+            </div>
+
+
+            <div
+                class="timer-value"
+                id="timer">
+
+                02:00:00
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         MESSAGE
+    ========================== -->
+
+    <div
+        class="message"
+        id="message">
+
+        Follow kedua akun untuk mendapatkan key
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div class="footer">
+
+        YANZ PROJECT TEAM • SECURE ACCESS
+
+    </div>
+
+
+</div>
+
+
+
+<script type="module">
+
+
+/* ==========================================
+   FIREBASE
+========================================== */
+
+import {
+
+    initializeApp
+
+}
+from
+"https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+
+
+import {
+
+    getFirestore,
+    collection,
+    addDoc,
+    serverTimestamp
+
+}
+from
+"https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+
+
+/* ==========================================
+   FIREBASE CONFIG
+========================================== */
+
+const firebaseConfig = {
+
+    apiKey:
+        "AIzaSyCFxeYheaAtB2KNLN-J4CoNchaajnbfo",
+
+    authDomain:
+        "yanx-mod.firebaseapp.com",
+
+    projectId:
+        "yanx-mod",
+
+    storageBucket:
+        "yanx-mod.firebasestorage.app",
+
+    messagingSenderId:
+        "987152018451",
+
+    appId:
+        "1:987152018451:web:eed97744e8602b7c4b23e6"
+
+};
+
+
+
+/* ==========================================
+   INITIALIZE
+========================================== */
+
+const app =
+    initializeApp(
+        firebaseConfig
+    );
+
+
+const db =
+    getFirestore(app);
+
+
+const keysCollection =
+    collection(
+        db,
+        "licenseKeys"
+    );
+
+
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+let tiktokDone =
+    false;
+
+
+let whatsappDone =
+    false;
+
+
+let timerInterval =
+    null;
+
+
+
+/* ==========================================
+   TIKTOK
+========================================== */
+
+window.openTikTok =
+function(){
+
+    window.open(
+        "https://www.tiktok.com/@frimmawan",
+        "_blank"
+    );
+
+
+    const btn =
+        document.getElementById(
+            "tiktokBtn"
+        );
+
+
+    btn.innerHTML =
+        "OPENED...";
+
+
+    btn.disabled =
+        true;
+
+
+    setTimeout(
+        function(){
+
+            tiktokDone =
+                true;
+
+
+            btn.innerHTML =
+                "✓ DONE";
+
+
+            btn.classList.add(
+                "done"
+            );
+
+
+            checkTasks();
+
+        },
+        1200
+    );
+
+};
+
+
+
+/* ==========================================
+   WHATSAPP
+========================================== */
+
+window.openWhatsApp =
+function(){
+
+    window.open(
+        "https://whatsapp.com/channel/0029Vb8tyia1iUxR1UuaYp11",
+        "_blank"
+    );
+
+
+    const btn =
+        document.getElementById(
+            "waBtn"
+        );
+
+
+    btn.innerHTML =
+        "OPENED...";
+
+
+    btn.disabled =
+        true;
+
+
+    setTimeout(
+        function(){
+
+            whatsappDone =
+                true;
+
+
+            btn.innerHTML =
+                "✓ DONE";
+
+
+            btn.classList.add(
+                "done"
+            );
+
+
+            checkTasks();
+
+        },
+        1200
+    );
+
+};
+
+
+
+/* ==========================================
+   CHECK TASK
+========================================== */
+
+function checkTasks(){
+
+    const btn =
+        document.getElementById(
+            "getKeyBtn"
+        );
+
+
+    if(
+        tiktokDone &&
+        whatsappDone
+    ){
+
+        btn.disabled =
+            false;
+
+
+        btn.classList.add(
+            "active"
+        );
+
+
+        btn.innerHTML =
+            "🔑 GET ACCESS KEY";
+
+
+        document
+        .getElementById(
+            "message"
+        )
+        .innerHTML =
+            "✓ Semua tugas selesai. Generate key sekarang.";
+
+    }
+
+}
+
+
+
+/* ==========================================
+   RANDOM KEY
+========================================== */
+
+function randomPart(
+    length
+){
+
+    const chars =
+        "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+
+    let result =
+        "";
+
+
+    for(
+        let i = 0;
+        i < length;
+        i++
+    ){
+
+        result +=
+            chars[
+                Math.floor(
+                    Math.random() *
+                    chars.length
+                )
+            ];
+
+    }
+
+
+    return result;
+
+}
+
+
+
+function generateKey(){
+
+    return "YZ-" +
+
+        randomPart(4) +
+
+        "-" +
+
+        randomPart(4) +
+
+        "-" +
+
+        randomPart(4);
+
+}
+
+
+
+/* ==========================================
+   SAVE KEY TO FIRESTORE
+========================================== */
+
+async function saveKeyToFirebase(
+    key
+){
+
+    const now =
+        new Date();
+
+
+    const expire =
+        new Date(
+            now.getTime() +
+            (
+                2 *
+                60 *
+                60 *
+                1000
+            )
+        );
+
+
+    await addDoc(
+        keysCollection,
+        {
+
+            key:
+                key,
+
+
+            active:
+                true,
+
+
+            duration:
+                2,
+
+
+            maxDevices:
+                1,
+
+
+            usedDevices:
+                0,
+
+
+            createdAt:
+                serverTimestamp(),
+
+
+            expireAt:
+                expire.toISOString()
+
+        }
+    );
+
+
+    return expire;
+
+}
+
+
+
+/* ==========================================
+   GENERATE BUTTON
+========================================== */
+
+document
+.getElementById(
+    "getKeyBtn"
+)
+.addEventListener(
+    "click",
+    async function(){
+
+        if(
+            !tiktokDone ||
+            !whatsappDone
+        ){
+
+            return;
+
+        }
+
+
+        const btn =
+            this;
+
+
+        btn.disabled =
+            true;
+
+
+        btn.classList.remove(
+            "active"
+        );
+
+
+        btn.innerHTML =
+            "GENERATING...";
+
+
+        document
+        .getElementById(
+            "message"
+        )
+        .innerHTML =
+            "Menyimpan access key ke Firebase...";
+
+
+        try{
+
+
+            /* ======================
+               GENERATE KEY
+            ====================== */
+
+            const key =
+                generateKey();
+
+
+
+            /* ======================
+               SAVE FIREBASE
+            ====================== */
+
+            const expires =
+                await saveKeyToFirebase(
+                    key
+                );
+
+
+
+            /* ======================
+               SHOW KEY
+            ====================== */
+
+            document
+            .getElementById(
+                "keyText"
+            )
+            .innerText =
+                key;
+
+
+            document
+            .getElementById(
+                "result"
+            )
+            .style.display =
+                "block";
+
+
+            btn.innerHTML =
+                "✓ KEY GENERATED";
+
+
+            document
+            .getElementById(
+                "message"
+            )
+            .innerHTML =
+                "✓ Key berhasil dibuat dan disimpan ke Firebase.";
+
+
+
+            /* ======================
+               TIMER
+            ====================== */
+
+            const seconds =
+                Math.max(
+                    0,
+                    Math.floor(
+                        (
+                            expires.getTime()
+                            -
+                            Date.now()
+                        ) / 1000
+                    )
+                );
+
+
+            startTimer(
+                seconds
+            );
+
+
+        }
+        catch(error){
+
+
+            console.error(
+                "FIREBASE ERROR:",
+                error
+            );
+
+
+            btn.disabled =
+                false;
+
+
+            btn.classList.add(
+                "active"
+            );
+
+
+            btn.innerHTML =
+                "🔑 GET ACCESS KEY";
+
+
+            document
+            .getElementById(
+                "message"
+            )
+            .innerHTML =
+                "❌ Gagal menyimpan key: " +
+                error.message;
+
+        }
+
+    }
+);
+
+
+
+/* ==========================================
+   TIMER
+========================================== */
+
+function startTimer(
+    seconds
+){
+
+    clearInterval(
+        timerInterval
+    );
+
+
+    let remaining =
+        seconds;
+
+
+    function updateTimer(){
+
+
+        const hours =
+            Math.floor(
+                remaining /
+                3600
+            );
+
+
+        const minutes =
+            Math.floor(
+                (
+                    remaining %
+                    3600
+                ) / 60
+            );
+
+
+        const secs =
+            remaining %
+            60;
+
+
+        document
+        .getElementById(
+            "timer"
+        )
+        .innerText =
+
+            String(hours)
+            .padStart(
+                2,
+                "0"
+            )
+
+            + ":"
+
+            +
+
+            String(minutes)
+            .padStart(
+                2,
+                "0"
+            )
+
+            + ":"
+
+            +
+
+            String(secs)
+            .padStart(
+                2,
+                "0"
+            );
+
+
+
+        if(
+            remaining <= 0
+        ){
+
+            clearInterval(
+                timerInterval
+            );
+
+
+            document
+            .getElementById(
+                "keyText"
+            )
+            .innerText =
+                "KEY EXPIRED";
+
+
+            document
+            .getElementById(
+                "message"
+            )
+            .innerHTML =
+                "❌ Access key sudah kedaluwarsa.";
+
+
+            return;
+
+        }
+
+
+        remaining--;
+
+    }
+
+
+    updateTimer();
+
+
+    timerInterval =
+        setInterval(
+            updateTimer,
+            1000
+        );
+
+}
+
+
+
+/* ==========================================
+   COPY KEY
+========================================== */
+
+document
+.getElementById(
+    "copyBtn"
+)
+.addEventListener(
+    "click",
+    async function(){
+
+        const key =
+            document
+            .getElementById(
+                "keyText"
+            )
+            .innerText;
+
+
+        if(
+            !key ||
+            key === "-" ||
+            key === "KEY EXPIRED"
+        ){
+
+            return;
+
+        }
+
+
+        try{
+
+
+            await navigator
+                .clipboard
+                .writeText(
+                    key
+                );
+
+
+            this.innerHTML =
+                "✓ COPIED";
+
+
+            setTimeout(
+                () => {
+
+                    this.innerHTML =
+                        "COPY KEY";
+
+                },
+                1500
+            );
+
+
+        }
+        catch(error){
+
+
+            /* Fallback copy */
+
+            try{
+
+                const textarea =
+                    document.createElement(
+                        "textarea"
+                    );
+
+
+                textarea.value =
+                    key;
+
+
+                textarea.style.position =
+                    "fixed";
+
+
+                textarea.style.opacity =
+                    "0";
+
+
+                document
+                    .body
+                    .appendChild(
+                        textarea
+                    );
+
+
+                textarea.select();
+
+
+                document.execCommand(
+                    "copy"
+                );
+
+
+                textarea.remove();
+
+
+                this.innerHTML =
+                    "✓ COPIED";
+
+
+                setTimeout(
+                    () => {
+
+                        this.innerHTML =
+                            "COPY KEY";
+
+                    },
+                    1500
+                );
+
+
+            }
+            catch(e){
+
+                this.innerHTML =
+                    "COPY FAILED";
+
+
+                setTimeout(
+                    () => {
+
+                        this.innerHTML =
+                            "COPY KEY";
+
+                    },
+                    1500
+                );
+
+            }
+
+        }
+
+    }
+);
+
+
+</script>
+
+</body>
+
+</html>
